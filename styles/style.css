@@ -1,5 +1,4 @@
-/*1. On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user.*/
-/*2. My Technical Documentation page should use at least one media query.*/
+
 html,body
 {
     width: 100%;
@@ -35,9 +34,12 @@ html {
  	background-color: green;
 }
 
-@media (max-width: 840px){
-	#navbar {
+@media (min-width: 840px){
+	#navbar{
 		position: fixed;
 		left: 0;
+		height: 100%;
+		max-width: 200px;
 	}
+
 }
